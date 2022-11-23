@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-world-happiness
-  summary: 'Orange3 add-on for accessing socioeconomic data'
+  summary: Orange3 add-on for accessing socioeconomic data
   description: |
     Orange3 World Happiness add-on for the Orange3 data mining suite.
     Enables downloading of socioeconomic data from database filled 
