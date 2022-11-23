@@ -1,5 +1,5 @@
 {% set name = "Orange3-WorldHappiness" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91619820dcb22e606e6a9caf5b3d66843eb2cc7697f670853d9c381bc465ff6b
+  sha256: 48875833d855cf5eaf21526d03b913437173e7910a9d872567da65c346a2d8bd
 
 build:
   noarch: python
