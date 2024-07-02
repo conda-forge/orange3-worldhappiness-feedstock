@@ -1,5 +1,5 @@
 {% set name = "Orange3-WorldHappiness" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2cff2ff857426ac0b59e9c9f716dd57b6c2e0365d84a47315fbc26acdfe9b37a
+  sha256: 238e9b7bd15357d0246ff1626efc1f77a9bd2c97aa5fc89979aae3ddb3e7a5b6
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.0
+    - python >=3.4
     - pip
   run:
-    - python >=3.0
+    - python >=3.4
     - Orange3 >=3.31
     - pandas
     - pymongo
