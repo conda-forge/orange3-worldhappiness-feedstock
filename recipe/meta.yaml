@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: 238e9b7bd15357d0246ff1626efc1f77a9bd2c97aa5fc89979aae3ddb3e7a5b6
 
 build:
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.0
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.0
+    - python >={{ python_min }}
     - Orange3 >=3.31
     - pandas
     - pymongo
@@ -30,6 +31,7 @@ test:
   imports:
     - orangecontrib.worldhappiness
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
